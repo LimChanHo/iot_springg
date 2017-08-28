@@ -7,7 +7,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-</head>
 <%
 String version = "1.3.2";
 %>
@@ -34,18 +33,16 @@ String version = "1.3.2";
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/main.jsp">HOME</a>
+          <a class="navbar-brand" href="/sp/user/main">MAIN</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="sp/user/main">게시판가기</a></li>
-            <li><a href="/user/user_info.jsp">유저정보가기</a></li>
-            <li><a href="/role/role_select.jsp">권한정보가기</a></li>
-            <li><a href="/goods/goods_list.jsp">제품정보가기</a></li>
-            <li><a href="/vendor/vendor_list.jsp">회사정보가기</a></li>
-            <li><a href="/user/logout_ok.jsp"></a></li>
+            <li><a href="/sp/user/list">USERLIST</a></li>
+            <li><a href="/sp/user/login">LOGOUT</a></li>
           </ul>
           
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
+    </body>

@@ -13,7 +13,35 @@ public class UserInfo {
 	private String hp2;
 	private String hp3;
 	private int userNum;
+	private int departNum;
+	private String userRoleLevel;
+	private String gender;
 	
+	@Override
+	public String toString() {
+		return "UserInfo [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + ", age=" + age
+				+ ", address=" + address + ", hp1=" + hp1 + ", hp2=" + hp2 + ", hp3=" + hp3 + ", userNum=" + userNum
+				+ ", departNum=" + departNum + ", userRoleLevel=" + userRoleLevel + ", gender=" + gender + "]";
+		
+	}
+	public int getDepartNum() {
+		return departNum;
+	}
+	public void setDepartNum(int departNum) {
+		this.departNum = departNum;
+	}
+	public String getUserRoleLevel() {
+		return userRoleLevel;
+	}
+	public void setUserRoleLevel(String userRoleLevel) {
+		this.userRoleLevel = userRoleLevel;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 	public String getUserId() {
 		return userId;
 	}

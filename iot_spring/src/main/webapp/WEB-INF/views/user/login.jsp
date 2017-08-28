@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/header.jsp"%>
+
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ui/signin.css" />
 <body>
 	<div class="container">
-		<form class="form-signin" action="${pageContext.request.contextPath}/user/login_ok.jsp">
+		<form class="form-signin">
 			<h2 class="form-signin-heading">Please login</h2>
 			<label for="inputEmail" class="sr-only">ID</label> <input type="text"
 				id="id" name="id" class="form-control" placeholder="ID" required
