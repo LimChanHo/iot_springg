@@ -7,10 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-${test}
-${hm.test}
-<form action="/sp/user/test">
-<input type="text" name="test">
+<form action="/sp/test/test1" method="get">
+<input type="text" name="exam">
+<input type="submit">
+</form>
+<form action="/sp/test/test1" method="post">
+<input type="text" name="exam">
+<input type="submit">
+</form>
+<form action="/sp/test/t" method="post">
+<input type="text" name="exam">
 <input type="submit">
 </form>
 </body>

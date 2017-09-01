@@ -65,7 +65,8 @@ public class UserController {
 	public @ResponseBody ModelMap getUserList(HttpServletRequest request, @RequestBody Map hm,ModelMap model,HttpSession hs) {
 
 		List<UserInfo> userList = us.getUserList(hm);
-		System.out.println(userList);
+		System.out.println("유저리스트=" + userList);
+		System.out.println("유저리스트22=" + hm);
 		model.put("userList",userList);
 		return model;
 	}
@@ -75,13 +76,21 @@ public class UserController {
 //		return "/user/list";
 //	}
 	
-	@RequestMapping(value="/test")
-	public String test(HttpServletRequest request,ModelMap model){
-		String test = request.getParameter("test");
-		if(test==null){
-			test = "널입니다.";
-		}
-		model.addAttribute("test",test);
-		return "test";
+//	@RequestMapping(value="/test")
+//	public String test(HttpServletRequest request,ModelMap model){
+//		String test = request.getParameter("test");
+//		if(test==null){
+//			test = "널입니다.";
+//		}
+//		model.addAttribute("test",test);
+//		return "test";	
+//	}
+	
+	
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public String logout(HttpSession hs) {
+		hs.invalidate();
+		return "redirect:/user/main";
 	}
+	
 }
