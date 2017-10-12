@@ -7,6 +7,7 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
 import com.iot.sp.user.dto.UserInfo;
+
 @Repository
 public class UserDaoImpl extends SqlSessionDaoSupport  implements UserDao{
 		
